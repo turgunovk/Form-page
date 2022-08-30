@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%);
+    background-size: 200% 200%;
+    animation: movingGradient 5s linear infinite alternate;
+}
+@keyframes movingGradient {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+.form-page {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: rgb(116, 155, 226);    
+}
+.form-page img {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.form-page .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-page .inputs form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-page .inputs .getin {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-page .inputs .ism {
+    width: 280px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid rgba(190, 189, 189, 0.699);
+    background-color:rgba(190, 189, 189, 0.699);
+}
+.form-page .inputs .ism:invalid{
+    animation: shake 300ms infinite;
+    animation-iteration-count: 10;
+}
+.form-page .inputs .login {
+    width: 280px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 40px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid rgba(190, 189, 189, 0.699);
+    background-color:rgba(190, 189, 189, 0.699);
+}
+
+.form-page .inputs .parol {
+    width: 280px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 40px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid rgba(190, 189, 189, 0.699);
+    background-color:rgba(190, 189, 189, 0.699);
+}
+
+.form-page .inputs .sms {
+    width: 280px;
+    height: 120px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid rgba(190, 189, 189, 0.699);
+    background-color:rgba(190, 189, 189, 0.699);
+}
+
+.form-page .inputs .button {
+    width: 300px;
+    height: 40px;
+    border: 2px solid cornflowerblue;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    color:rgb(91, 91, 91);
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gainsboro;
+    border-radius: 30px;
+}
+.form-page .inputs .button:hover {
+    color: beige;
+    background-color: rgb(60, 112, 209);
+}
+
+
+/* -------------------------------RESPONSIVE SCREEN SIZES---------------------------------------------------- */
+
+/* ------------------------------Extra Small Devices(phones) ------------------------------------------------------- */
+
+@media (min-width:320px) and (max-width: 640px){
+    .form-page{
+        width: 70%;
+        height: 70%;
+    }
+    .form-page img{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+
+    }
+    .form-page .inputs .getin{
+        font-size: 12px;
+        margin-bottom: 6px;
+        margin-right: 50px;
+    }
+    .form-page .inputs .ism {
+        width: 120px;
+        height: 20px;
+        font-size: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        margin-right: 50px;
+    }
+    .form-page .inputs .login {
+        width: 125px;
+        height: 20px;
+        font-size: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        margin-top: 6px;
+        margin-right: 45px;
+    }
+    .form-page .inputs .parol {
+        width: 125px;
+        height: 20px;
+        font-size: 10px;
+        padding: 5px;
+        padding-left: 15px;
+        margin-top: 6px;
+        margin-right: 45px;
+    }
+    .form-page .inputs .sms {
+        width: 140px;
+        height: 80px;
+        font-size: 12px;
+        padding: 8px;
+        padding-left: 15px;
+        margin-top: 6px;
+        margin-right: 40px;
+    }
+    .form-page .inputs .button {
+        width: 130px;
+        height: 25px;
+        font-size: 12px;
+        margin-top: 6px;
+        padding: 3px;
+        padding-left: -35px;
+        margin-right: 45px;
+    }
+}
+
+/* -------------------------------Medium devices (portrait tablets and large phones)------------------------------------------- */
+@media (min-width:641px) and (max-width: 1024px){
+    .form-page{
+        width: 60%;
+        height: 60%;
+    }
+    .form-page img{
+        width: 100px;
+        height: 100px;
+        margin-left: 45px;
+    }
+    .form-page .inputs .getin{
+        font-size: 18px;
+        margin-bottom: 4px;
+        margin-right: 80px;
+    }
+    .form-page .inputs .ism {
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        padding: 10px;
+        padding-left: 12px;
+        margin-right: 80px;
+        margin-top: 8px;
+    }
+    .form-page .inputs .login {
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+        padding: 10px;
+        padding-left: 12px;
+        margin-top: 8px;
+        margin-right: 60px;
+    }
+    .form-page .inputs .parol {
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+        padding: 10px;
+        padding-left: 12px;
+        margin-top: 8px;
+        margin-right: 60px;
+    }
+    .form-page .inputs .sms {
+        width: 160px;
+        height: 100px;
+        font-size: 14px;
+        padding: 10px;
+        padding-left: 12px;
+        margin-top: 8px;
+        margin-right: 50px;
+    }
+    .form-page .inputs .button {
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+        margin-top: 6px;
+        padding: 5px;
+        padding-left: -35px;
+        margin-right: 55px;
+    }
+}
+/* -------------------------------Large devices (laptops/desktops)------------------------------------------- */
+@media (min-width:1025px) and (max-width: 1350px){
+    .form-page {
+        height: 70%;
+        width: 70%;  
+    }
+    .form-page img {
+        width: 250px;
+        height: 250px;
+    }
+    .form-page .inputs .getin {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+    .form-page .inputs .ism {
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 30px;
+    }
+    .form-page .inputs .login {
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+    .form-page .inputs .parol {
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+    .form-page .inputs .sms {
+        width: 280px;
+        height: 120px;
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+    .form-page .inputs .button {
+        width: 300px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 15px;
+        padding: 7px;
+    }
+}
